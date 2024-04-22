@@ -1,13 +1,13 @@
 let score = true ; 
 
-console.log(typeof score);
+//console.log(typeof score);
 
  score = "33abc";
 
-console.log(typeof score);
+//console.log(typeof score);
 
 let isValueNumber = Number(score);
-console.log(isValueNumber);
+//console.log(isValueNumber);
 
 
 //"33" => 33
@@ -21,15 +21,31 @@ let isLoggedIn = 1;
 
 let booleanValue = Boolean(isLoggedIn);
 
-console.log(booleanValue);
+//console.log(booleanValue);
 
 let isLoggedOff = 0 ;
 let booleanLogOff = Boolean(isLoggedOff);
-console.log(booleanLogOff);
+//console.log(booleanLogOff);
 
 //1=> true; 0=> false; ""=>false; "sanket"=> true
 
 let name = 123 ; 
 let convert = String(name);
 
-console.log(typeof convert);
+//console.log(typeof convert);
+
+
+
+//Operations
+
+
+
+let x  = 100 ; 
+let  y = x++;
+
+console.log (x);
+console.log(y);
+
+
+console.log("1" + 1 + 3);
+console.log(1 + 1 + "3");
