@@ -31,7 +31,17 @@ const users = [
 
 // console.log(users[2].id);
 
-console.log(Object.keys(user));
-console.log(Object.values(user));
-console.log(Object.entries(user));
-console.log(user.hasOwnProperty("sanket"));
+// console.log(Object.keys(user));
+// console.log(Object.values(user));
+// console.log(Object.entries(user));
+// console.log(user.hasOwnProperty("sanket"));
+
+//object destructre
+
+const course = {
+  courseName:"javascript",
+  coursePrice: 999
+}
+
+const {courseName} = course;
+console.log(courseName);
