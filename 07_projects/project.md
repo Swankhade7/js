@@ -4,7 +4,8 @@
 [Click here](https://stackblitz.com/edit/dom-project-chaiaurcode?file=index.html)
 
 ## solution
-``` const buttons = document.querySelectorAll('.button');
+```javascript
+const buttons = document.querySelectorAll('.button');
 const body = document.querySelector('body');
 
 buttons.forEach(function (button) {
@@ -29,7 +30,7 @@ buttons.forEach(function (button) {
 });
 ```
 ## with switch case
-```
+```javascript
 const buttons = document.querySelectorAll('.button');
 const body = document.querySelector('body');
 
@@ -56,7 +57,7 @@ buttons.forEach( function(button){
 
 # Project two
 
-```
+```javascript
 const form = document.querySelector('form');
 
 form.addEventListener('submit', function (e) {
