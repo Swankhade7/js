@@ -1,6 +1,6 @@
 # Project related to DOM
 
-## Project One
+## Project One - Color switcher
 [Click here](https://stackblitz.com/edit/dom-project-chaiaurcode?file=index.html)
 
 ## solution
@@ -55,7 +55,7 @@ buttons.forEach( function(button){
 ``` 
 
 
-# Project two
+# Project two BMI Calculator
 
 ```javascript
 const form = document.querySelector('form');
@@ -85,5 +85,16 @@ form.addEventListener('submit', function (e) {
     }
   }
 });
+```
+
+# Project Three - Digital Clock
+
+```javascript
+const clock = document.getElementById('clock');
+setInterval(function () {
+  let date = new Date();
+  clock.innerHTML = date.toLocaleTimeString();
+}, 1000);
+
 ```
 
