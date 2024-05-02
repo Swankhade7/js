@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM 4</title>
+</head>
+<body style="background-color: #212121; color: #fff;">
+    <ul class="language">
+        <li>Javascript</li>
+    </ul>
+</body>
+<script>
+    function addLang(langName) {
+        const newLi = document.createElement('li')
+        newLi.innerHTML = `${langName}`;
+        document.querySelector('.language').appendChild(newLi);
+    }
+    addLang('Python');
+    addLang('Typescript');
+    
+    function newLang(langName){
+       const li = document.createElement('li');
+       li.appendChild(document.createTextNode(langName));
+       document.querySelector('.language').appendChild(li);
+    }
+
+    newLang('Ruby');
+    newLang('C++');
+
+    //editing elements in DOM
+    const thirdLi = document.querySelector('li:nth-child(3)');
+    // thirdLi.innerHTML = 'goLang';
+    const newLi = document.createElement('li');
+    newLi.textContent = 'Java';
+    thirdLi.replaceWith(newLi);
+
+    //another edit example
+    const firstLi = document.querySelector('li:first-child');
+    // console.log(firstLi);
+    firstLi.outerHTML = '<li>C#</li>';
+
+    //removing elements from DOM
+    const lastLi = document.querySelector('li:last-child');
+    lastLi.remove();
+</script>
+</html>
